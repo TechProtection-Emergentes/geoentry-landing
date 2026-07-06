@@ -4,9 +4,9 @@ import React from "react";
 
 const floatingIcons = [
   { icon: "📺", className: "top-[20%] left-[10%] animate-float delay-0" },
-  { icon: "💡", className: "top-[15%] right-[15%] animate-float delay-2000" },
-  { icon: "❄️", className: "bottom-[20%] left-[15%] animate-float delay-4000" },
-  { icon: "☕", className: "bottom-[25%] right-[20%] animate-float delay-3000" },
+  { icon: "🧠", className: "top-[15%] right-[15%] animate-float delay-2000" },
+  { icon: "💡", className: "bottom-[20%] left-[15%] animate-float delay-4000" },
+  { icon: "❄️", className: "bottom-[25%] right-[20%] animate-float delay-3000" },
 ];
 
 export default function Hero() {
@@ -45,14 +45,14 @@ export default function Hero() {
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-2xl px-4 py-8">
         <div className="inline-block mb-8 px-4 py-2 rounded-full border border-white/30 bg-white/20 backdrop-blur-[10px] text-white text-sm animate-slideInDown">
-          🏠 Dispositivos IoT para mayor comodidad y modernidad
+          🧠 IA Local (Ollama) que predice tus necesidades
         </div>
         <h1 className="text-white font-extrabold text-4xl md:text-6xl mb-6 leading-tight animate-slideInUp [animation-delay:0.3s]">
-          Transforma tu hogar con<br />
+          Inteligencia Artificial para tu Hogar con<br />
           <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(255,255,255,0.5)]">GeoEntry</span>
         </h1>
         <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed animate-slideInUp [animation-delay:0.6s]">
-          Tu hogar se activa solo: TV, luces, aire y café listos al llegar.
+          Nuestra IA aprende tu rutina y hábitos. TV, luces y clima ideales listos antes de que cruces la puerta.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-10 animate-slideInUp [animation-delay:0.9s]">
           <a

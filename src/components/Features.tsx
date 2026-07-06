@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import FeatureCard from './FeatureCard';
-import { MonitorSmartphone, Lightbulb, Snowflake, Coffee, MapPin, Wifi } from 'lucide-react';
+import { MonitorSmartphone, Lightbulb, Snowflake, Coffee, MapPin, BrainCircuit, ShieldCheck } from 'lucide-react';
 
 const Features: React.FC = () => {
   const featuresRef = useRef<HTMLDivElement>(null);
@@ -55,14 +55,19 @@ const Features: React.FC = () => {
       icon: Coffee // Café
     },
     {
-      title: 'Geolocalización',
-      description: 'Detecta automáticamente cuando te acercas a casa y activa los dispositivos inteligentes.',
+      title: 'Geofencing Predictivo',
+      description: 'Detecta tu proximidad sin drenar la batería y prepara tu entorno de forma óptima.',
       icon: MapPin
     },
     {
-      title: 'Todo en una App',
-      description: 'Controla y monitorea todos los dispositivos de tu hogar inteligente desde una sola aplicación.',
-      icon: Wifi
+      title: 'Inteligencia Artificial',
+      description: 'Un modelo local (Ollama) analiza tus hábitos y la hora para decidir qué encender de forma predictiva.',
+      icon: BrainCircuit
+    },
+    {
+      title: 'Auditoría Transparente',
+      description: 'Supervisa en tiempo real qué decidió la IA y revisa el razonamiento exacto detrás de cada acción.',
+      icon: ShieldCheck
     }
   ];
 
