@@ -4,7 +4,7 @@ import geoentryLogo from '../assets/geoentry.png';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             <a href="#features" onClick={e => handleNavClick(e, 'features')} className={`font-medium transition-colors ${linkColor}`}>Características</a>
             <a href="#how-it-works" onClick={e => handleNavClick(e, 'how-it-works')} className={`font-medium transition-colors ${linkColor}`}>Cómo funciona</a>
             <a href="#contact" onClick={e => handleNavClick(e, 'contact')} className={`font-medium transition-colors ${linkColor}`}>Contacto</a>
-            <a href="https://geoentry-site.netlify.app/" target="_blank" rel="noopener noreferrer" className="ml-4 bg-gradient-to-r from-blue-700 to-blue-400 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:from-blue-800 hover:to-blue-600 transition-all duration-300 border-none cursor-pointer">Registrarse</a>
+            <a href="https://geoentry-frontend-jade.vercel.app/" target="_blank" rel="noopener noreferrer" className="ml-4 bg-gradient-to-r from-blue-700 to-blue-400 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:from-blue-800 hover:to-blue-600 transition-all duration-300 border-none cursor-pointer">Registrarse</a>
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {/* Mobile menu */}
-      <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden bg-gradient-to-br from-[#4a90e2] via-[#357abd] to-[#2c5f94] px-4 pt-2 pb-4`}> 
+      <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden bg-gradient-to-br from-[#4a90e2] via-[#357abd] to-[#2c5f94] px-4 pt-2 pb-4`}>
         <a href="#features" onClick={e => { handleNavClick(e, 'features'); setIsMobileMenuOpen(false); }} className={`block py-2 font-medium ${linkColor}`}>Características</a>
         <a href="#how-it-works" onClick={e => { handleNavClick(e, 'how-it-works'); setIsMobileMenuOpen(false); }} className={`block py-2 font-medium ${linkColor}`}>Cómo funciona</a>
         <a href="#contact" onClick={e => { handleNavClick(e, 'contact'); setIsMobileMenuOpen(false); }} className={`block py-2 font-medium ${linkColor}`}>Contacto</a>
